@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TO-DO LIST</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="headline">
+            <h1 class="title">TO-DO LIST</h1>
+            <h3 class="insiration"><i>"The secret of getting ahead is getting started."</i></h3>
+            <h5>MARK TWAIN</h5>
+        </div>
+        <div class="form">
+            <form>
+                <input type="text" id="taskName" name="taskName" placeholder="Task name:"><br>
+                <input type="text" id="description" name="description" placeholder="Description:"><br>
+                <input placeholder="Start Date:" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="startDate" name="startDate"><br>
+                <input placeholder="End Date:" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="endDate" name="endDate"><br>
+                <input type="submit" value="Add Task" class="submit">
+              </form>
+        </div>
+        <div class="middlePart">
+            <div class="list"></div>
+            <!-- <div class="colors">
+                <div class="Color">
+                    <div class="green box"></div>
+                    <div class="text">Task Completed</div>
+                </div>
+                <div class="Color">
+                    <div class="red box"></div>
+                    <div class="text">Task Pending</div>
+                </div>
+                <div class="Color">
+                    <div class="blue box"></div>
+                    <div class="text">Task Overdue</div>
+                </div>
+            </div> -->
+        </div>
+        <div class="bottom">
+            <button type="button" class="clear">Clear All</button>
+        </div>
+    </div>
+
+	<script src="https://kit.fontawesome.com/c130f3e808.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
